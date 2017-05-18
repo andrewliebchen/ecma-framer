@@ -1,6 +1,7 @@
 'use strict';
 
 let path = require('path');
+let OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -11,6 +12,10 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve('./public')
     },
+
+    plugins: [
+      new OpenBrowserPlugin({ url: 'http://localhost:9000' })
+    ],
 
     devtool: '#cheap-source-map',
 
