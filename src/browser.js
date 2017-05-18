@@ -1,5 +1,7 @@
+import fbColor from './fb-color';
+
 let browser = new DeviceComponent({
-	deviceType: 'desktop-safari-1440-900',
+	deviceType: 'desktop-safari-1440-900'
 });
 
 browser.setupContext();
