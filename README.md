@@ -55,4 +55,4 @@ Don't mess with `/public`. Stuff in there helps Framer run on the Webpack server
 
 ## What about Sketch import?
 
-I don't know. Looking into it...
+I haven't been able to find foolproof method. The [Copy Framer Code](https://github.com/perrysmotors/copy-framer-code) plugin for Sketch seems like the most promising option. Unfortunately, it generates Coffeescript, which you can transpile into JS with something like [JS2Coffee](http://js2.coffee/).

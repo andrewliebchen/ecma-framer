@@ -28,4 +28,4 @@ layerA.on(Events.AnimationEnd, () => {
 	Utils.delay(0.2, () => {
 		layerA.animate('default');
 	});
-})
+});
