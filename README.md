@@ -1,90 +1,58 @@
-# boilerplate-babel-webpack ([npm](https://www.npmjs.com/package/boilerplate-babel-webpack))
+# ECMA-Framer: Framer in the browser
 
-![](https://badge.fury.io/js/boilerplate-babel-webpack.svg)
-![](https://img.shields.io/npm/dt/boilerplate-babel-webpack.svg)
+Recent updates to Framer Studio sucks. This boilerplate uses Webpack and Babel to allow you to write your Framer apps in whatever editor you want, preview the results in a browser, and make use of all the ES6/7 goodness!
 
-> :fork_and_knife: Starter with Babel.js and Webpack
+## Setup
 
-## Features
+To use this repo, you're going to need to be comfortable with writing Javascript, and running simple commands on the command line.
 
-* [x] Webpack v2.3.2
-* [x] Babel v6.24.0
-* [x] Support syntax ES2015 & ES2016
-* [x] Static directory: `public/`
-* [x] Source Map of bundle file.
-* [x] Analysis of bundle file weight.
-
-## Getting started
-
-You can start in two ways:
-
-### Use Git
+First grab a copy of this repo:
 
 ```
-$ mkdir PROJECT_NAME
-$ cd $_     # Note: "$_" is last argument of previous command
-$ git init  # Note: branch "master" is created
-$ git remote add boilerplate git@github.com:piecioshka/boilerplate-babel-webpack.git
-$ git pull boilerplate master
-$ git remote remove boilerplate
+git clone git@github.com:andrewliebchen/ecma-framer.git
 ```
 
-or ...
-
-### Use Zip
-
-1. Download package file:<br/>
-https://github.com/piecioshka/boilerplate-babel-webpack/archive/master.zip
-2. Extract it to your project directory.
-
-## How to build the application?
+`cd` into the repo and install deps:
 
 ```
-$ npm install
-$ npm run build
-# Open public/ directory in browser
+cd ecma-framer
+npm i
 ```
 
-Your source will be minified.
+Thats it!
 
-## How to develop the application?
+## Using
 
-```
-$ npm install
-$ npm run watch
-# Open public/ directory in browser
-```
-
-## Remove generated directory
-
-If you would like to remove `public/dist` directory (created by Webpack):
+To start the Webpack development server, simply run:
 
 ```
-$ npm run clear
+npm start
 ```
 
-If you would like to remove `node_modules/` and remove `public/dist/`
+Then in your browser, visit http://localhost:9000.
 
-```
-$ npm run clear:all
-```
+All your working files will be in `src/`. `index.js` the only file you **must** have, and serves as the...uh...index for the entire app. Unlike Framer Studio, you can write your framer code in other files and just `import` them into `index.js`.
 
-## Count LOC (Lines of Code)
+**src/layerA.js**
+```js
+let layerA = new Layer({...});
 
-If you would like to know how many lines of code you write:
-
-```
-$ npm run count
+export default layerA;
 ```
 
-## Analysis of bundle file weight
+**src/index.js**
+```js
+import layerA from './layerA';
 
-If you would like to check how much a bundle file weight:
-
+let layerB = new Layer({...});
 ```
-$ npm run audit
-```
 
-## License
+The development server you started with `npm start` should listen for changes to your working files and automatically update the browser.
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2017
+### WARNING
+
+Don't mess with `/public`. Stuff in there helps Framer run on the Webpack server. Stay in `/src`!
+
+## What about Sketch import?
+
+I don't know. Looking into it...

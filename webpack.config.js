@@ -4,7 +4,7 @@ let path = require('path');
 
 module.exports = {
     entry: {
-        main: path.resolve('./src/app.js')
+        main: path.resolve('./src/index.js')
     },
 
     output: {
