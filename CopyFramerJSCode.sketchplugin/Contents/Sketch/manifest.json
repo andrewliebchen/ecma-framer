@@ -1,0 +1,39 @@
+{
+  "name" : "Copy Framer JS Code",
+  "identifier" : "com.andrewliebchen.copy-framer-js-code",
+  "version" : "3.0",
+  "compatibleVersion": 44,
+  "description" : "Copy layers to the clipboard as JS.",
+  "homepage": "https://github.com/andrewliebchen/copy-framer-code",
+  "author" : "Giles Perry",
+  "commands" : [
+    {
+      "script" : "copy-framer-js-code.js",
+      "handler" : "copyAt1x",
+      "shortcut" : "",
+      "name" : "Copy @ 1x",
+      "identifier" : "copyAt1x"
+    },
+    {
+      "script" : "copy-framer-js-code.js",
+      "handler" : "copyAt2x",
+      "shortcut" : "",
+      "name" : "Copy @ 2x",
+      "identifier" : "copyAt2x"
+    },
+    {
+      "script" : "copy-framer-js-code.js",
+      "handler" : "copyAt3x",
+      "shortcut" : "",
+      "name" : "Copy @ 3x",
+      "identifier" : "copyAt3x"
+    }
+  ],
+  "menu": {
+    "items": [
+      "copyAt1x",
+      "copyAt2x",
+      "copyAt3x"
+    ]
+  }
+}
