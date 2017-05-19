@@ -1,12 +1,11 @@
 {
-  "name": "boilerplate-babel-webpack",
-  "version": "1.0.4",
-  "description": "Starter with Babel.js and Webpack",
+  "name": "ecma-framer",
+  "version": "1.0.0",
+  "description": "Framer Studio, except with JS and your browser",
   "license": "MIT",
   "author": {
-    "name": "Piotr Kowalski",
-    "email": "piecioshka@gmail.com",
-    "url": "https://piecioshka.pl"
+    "name": "Andrew Liebchen",
+    "email": "andrewliebchen@gmail.com"
   },
   "scripts": {
     "clear": "rm -rf public/dist/",
@@ -25,14 +24,11 @@
   "keywords": [
     "webpack",
     "babel",
-    "starter",
     "source map",
-    "explorer",
-    "count",
-    "loc"
+    "framerjs"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/piecioshka/boilerplate-babel-webpack"
+    "url": "https://github.com/andrewliebchen/ecma-framer"
   }
 }
