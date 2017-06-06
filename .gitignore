@@ -2,3 +2,5 @@ node_modules/
 npm-debug.log
 
 public/dist/
+public/main.bundle.js
+public/main.bundle.js.map

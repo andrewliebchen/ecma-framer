@@ -8,9 +8,9 @@
     "email": "andrewliebchen@gmail.com"
   },
   "scripts": {
-    "clear": "rm -rf public/dist/",
-    "clear:all": "rm -rf node_modules/ && npm run clear",
-    "start": "webpack-dev-server --inline --hot --content-base public/"
+    "build": "webpack -p",
+    "clean": "rm public/main.bundle.js public/main.bundle.js.map",
+    "start": "webpack-dev-server --inline --hot --content-base dist/"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -18,7 +18,7 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-es2016": "^6.22.0",
     "open-browser-webpack-plugin": "0.0.5",
-    "webpack": "^2.3.2",
+    "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
   "keywords": [
