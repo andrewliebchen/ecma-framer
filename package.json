@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack -p",
     "clean": "rm public/main.bundle.js public/main.bundle.js.map",
-    "start": "webpack-dev-server --inline --hot --content-base dist/"
+    "start": "webpack-dev-server --inline --hot --content-base public/"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
