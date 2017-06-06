@@ -1,6 +1,8 @@
 # ECMA-Framer: Framer in the browser
 
-Recent updates to Framer Studio sucks. This boilerplate uses Webpack and Babel to allow you to write your Framer apps in whatever editor you want, preview the results in a browser, and make use of all the ES6/7 goodness!
+This boilerplate uses Webpack and Babel to allow you to write your Framer apps in whatever editor you want, preview the results in a browser, and make use of all the ES6/7 goodness!
+
+Maybe you think the recent updates to Framer Studio might be a little...much. Maybe you're getting sick of writing Coffeescript. Maybe you want to just use a fully-featured editor to write your prototypes. Sound like you? Give ECMA-Framer a try.
 
 ## Setup
 
@@ -83,7 +85,7 @@ Finally, deploy to **Now**:
 now
 ```
 
-Boom done. Now will tell you via your terminal what your custom URL is.
+Boom. Done. Now will tell you via your terminal what your custom URL is.
 
 ## Questions?
 
