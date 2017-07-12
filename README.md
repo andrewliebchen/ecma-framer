@@ -63,29 +63,31 @@ I've forked the phenomenal [Copy Framer Code](https://github.com/perrysmotors/co
 
 ## Deployment
 
-Framer Studio's got that neato Framer Cloud thing, what about ECMA-Framer? Since Framer is just Javascript at the end of the day, you can deploy a build of your prototype to any service you'd like, even your own server. This is possible because ECMA-Framer frees your project from the Framer ecosystem lock in.
+This doesn't quite work yet. I've got some more work to do here...
 
-If you're looking for dead simple deployments, try **[Now](https://zeit.co/now)** from Zeit. **Now** allows you to deploy simple JS apps with a single command (try to guess what it is). On it's open source plan, your project will be publicly visible to anyone who has the URL (but there is no Now directory, so the changes of someone finding or guessing it are nil). You can even alias your project to a custom domain, or a custom now.sh subdomain.
+~~Framer Studio's got that neato Framer Cloud thing, what about ECMA-Framer? Since Framer is just Javascript at the end of the day, you can deploy a build of your prototype to any service you'd like, even your own server. This is possible because ECMA-Framer frees your project from the Framer ecosystem lock in.~~
 
-First, deploy Now. From inside your prototype, run:
+~~If you're looking for dead simple deployments, try **[Now](https://zeit.co/now)** from Zeit. **Now** allows you to deploy simple JS apps with a single command (try to guess what it is). On it's open source plan, your project will be publicly visible to anyone who has the URL (but there is no Now directory, so the changes of someone finding or guessing it are nil). You can even alias your project to a custom domain, or a custom now.sh subdomain.~~
+
+~~First, deploy Now. From inside your prototype, run:~~
 
 ```
 npm i -g now
 ```
 
-Next, build your prototype:
+~~Next, build your prototype:~~
 
 ```
 npm run build
 ```
 
-Finally, deploy to **Now**:
+~~Finally, deploy to **Now**:~~
 
 ```
 now
 ```
 
-Boom. Done. Now will tell you via your terminal what your custom URL is.
+~~Boom. Done. Now will tell you via your terminal what your custom URL is.~~
 
 ## Questions?
 
