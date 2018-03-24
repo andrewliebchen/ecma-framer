@@ -13,6 +13,10 @@ First grab a copy of this repo:
 ```
 git clone git@github.com:andrewliebchen/ecma-framer.git
 ```
+or 
+```
+git clone https://github.com/andrewliebchen/ecma-framer.git
+```
 
 `cd` into the repo and install deps:
 
